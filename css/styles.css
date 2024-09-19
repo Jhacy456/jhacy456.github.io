@@ -3,23 +3,131 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'poppings' sans-serif;
+    box-sizing: border-box;
 }
 .main-box {
 position: relative;
-background: url(./assets/images/pixx1.jpg) right no-repeat;
+background: linear-gradient(rgba(0, 0, 0, 0.897),
+rgba(0, 0, 0, 0.856)), url(./assets/images/pixx1.jpg) right no-repeat;
 height: 100vh;
 width: 100%;
 background-size: cover;
-
+-webkit-animation: kenburns-top 5s ease-out reverse both;
+	        animation: kenburns-top 5s ease-out reverse both;
 }
+
+ @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
 .main-box .sidebar-menu {
     position: fixed;
     height: 100vh;
     width: 280px;
     left: -280px;
     background: rgb(255, 255, 255, 0.1);
-    box-shadow: 0 0 6px rgb(255, 255, 255, 0.1); 
-     
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.1);   
+}
+.subtitle{
+    font-size: 25px;
+    color: white;
+}
+
+.title {
+    font-size: 60px;
+    color: white;
+    font-style: oblique;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+}
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid purple; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:purple}
+  }
+.description{
+    font-size: 25px;
+    color: white;  
+}
+
+.about-me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: purple;
+    width: 200px;
+    height: 65px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: transparent;
+    border: 1px solid;
+} 
+ .portfolio {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: purple;
+    width: 200px;
+    height: 65px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: transparent;
+    border: 1px solid;
+ } 
+ .portfolio :hover{
+    background-color: whitesmoke;
+ }
+.button{
+    display: flex;
+    gap: 100px;
+    margin-top: 15px;
+    width: 100;
+}
+.button :hover {
+    background-color: whitesmoke;
 }
 .sidebar-menu .logo {
 position: absolute;
@@ -44,6 +152,15 @@ box-shadow: 0 0 6px rgb(255, 255, 255, 0.1);
 
 }
 
+.hero-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    margin: auto;
+    padding: 10% 0% 20% 0%;
+
+}
 .sidebar-menu .menu li {
     margin-top: 6px;
     padding: 14px 20px;
@@ -110,3 +227,186 @@ font-size: 29px;
 #check:checked ~ .btn-two i {
     opacity: 0;
 }
+ 
+/* About me */
+.main{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2f;
+
+}
+.about-container{
+    width: 100%;
+    padding: 50px 8%;
+}
+.about-contents{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 70px;
+}
+.image-section{
+    grid-area: imagesect;
+    /* border: 1px solid white; */
+}
+.infosection{
+    grid-area: infosect;
+    /* border: 1px solid red; */
+}
+.skillselection{
+    grid-area: skillsect;
+    /* border: 1px solid yellow; */
+}
+
+.about-container .about-contents {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 70px;
+    grid-template-areas: 'imagesect infosect'
+                         'skillsect skillsect';
+}
+.about-contents .image-section {
+    position: relative;
+    min-width: 300px;
+    height: 300px;
+}
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+.about-contents .image-section::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #787cb5;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+.infosection h1 {
+color: #dedce1;
+font-size: 30px;
+font-family: helvetica;
+text-transform: uppercase;
+display: inline-block;
+margin-bottom: 5px;
+position: relative;
+}
+.infosection h1::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 1px;
+top: 110%;
+background-color: #aaabb0;
+}
+.infosection h1::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    top: calc(110% 1);
+    left: 0px;
+    background-color: #787cb5;
+} 
+.infosection h2 {
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: #787cb5;
+    padding: 14px 0px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.infosection p{
+    color: #aaabb0;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-bottom: 8px;
+}
+.personalinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+}
+.personalinfo div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.personalinfo div span {
+    color: #aaabb0;
+    letter-spacing: 1px;
+}
+.infosection button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #787cb5;
+    width: 200px;
+    height: 65px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: transparent;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.infosection button :hover{
+    background-color: whitesmoke; 
+
+}
+.info-button :hover {
+    background-color: whitesmoke;
+}
+
+.skillselection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 80px;  
+}
+.skillselection .subject{
+    font-size: 17px;
+    font-weight: thin;
+    color: #aaabb0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.progress-bar {
+    width: 100px;
+    height: 16px;
+    background-color: #2b2a2f;
+    padding: 4px 6px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #444;
+    border-radius: 15px;
+}
+.progress-line {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #787cb5;
+    box-shadow: -1px -1px 2px #222222 
+    1px 1px 2px #111111;
+    border-radius: 15px;
+                     
+}
+.progress-line ::after{
+    position: absolute;
+    content: attr(value);
+   top: -35px;
+   right: 0px;
+   transform: translateX(-50%);
+   color: #aaabb0;
+   font-size: 17p;
+} 
+
