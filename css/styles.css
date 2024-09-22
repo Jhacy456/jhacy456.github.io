@@ -7,8 +7,8 @@
 }
 .main-box {
 position: relative;
-background: linear-gradient(rgba(0, 0, 0, 0.897),
-rgba(0, 0, 0, 0.856)), url(./assets/images/pixx1.jpg) right no-repeat;
+background: linear-gradient(rgba(0, 0, 0, 0.295),
+rgba(0, 0, 0, 0.164)), url(./assets/images/image.png) right no-repeat;
 height: 100vh;
 width: 100%;
 background-size: cover;
@@ -70,7 +70,7 @@ background-size: cover;
     color: #fff;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid purple; /* The typwriter cursor */
+    border-right: .15em solid rgba(243, 124, 203, 0.493); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -88,7 +88,7 @@ background-size: cover;
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color:purple}
+    50% { border-color:rgba(250, 129, 204, 0.575)}
   }
 .description{
     font-size: 25px;
@@ -99,7 +99,7 @@ background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: purple;
+    color: rgba(250, 129, 204, 0.575);
     width: 200px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -110,7 +110,7 @@ background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: purple;
+    color: rgba(250, 129, 204, 0.575);
     width: 200px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -235,7 +235,7 @@ font-size: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2b2a2f;
+    background-color: #2b2a2f25;
 
 }
 .about-container{
@@ -284,13 +284,13 @@ font-size: 29px;
     content: '';
     width: 100%;
     height: 100%;
-    outline: 3px solid #787cb5;
+    outline: 3px solid rgba(250, 129, 204, 0.575);
     top: 15px;
     left: 15px;
     z-index: 1;
 }
 .infosection h1 {
-color: #dedce1;
+color: rgba(250, 129, 204, 0.575);
 font-size: 30px;
 font-family: helvetica;
 text-transform: uppercase;
@@ -304,7 +304,7 @@ position: absolute;
 width: 100%;
 height: 1px;
 top: 110%;
-background-color: #aaabb0;
+background-color: black;
 }
 .infosection h1::after {
     content: '';
@@ -313,19 +313,19 @@ background-color: #aaabb0;
     height: 3px;
     top: calc(110% 1);
     left: 0px;
-    background-color: #787cb5;
+    background-color: black;
 } 
 .infosection h2 {
     font-family: helvetica;
     font-size: 20px;
     font-weight: 600;
-    color: #787cb5;
+    color: rgba(250, 129, 204, 0.575);
     padding: 14px 0px 15px;
     text-transform: capitalize;
     letter-spacing: 1px;
 }
 .infosection p{
-    color: #aaabb0;
+    color: black;
     font-size: 18px;
     line-height: 1.2;
     text-align: justify;
@@ -337,7 +337,7 @@ background-color: #aaabb0;
     grid-gap: 10px 20px;
     margin-top: 14px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid rgba(250, 129, 204, 0.575);
 }
 .personalinfo div{
     display: grid;
@@ -352,7 +352,7 @@ background-color: #aaabb0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: #787cb5;
+    color: rgba(250, 129, 204, 0.575);
     width: 250px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -385,7 +385,7 @@ background-color: #aaabb0;
 .progress-bar {
     width: 100px;
     height: 16px;
-    background-color: #2b2a2f;
+    background-color: purple;
     padding: 4px 6px;
     border-top: 1px solid #000;
     border-bottom: 1px solid #444;
@@ -412,7 +412,7 @@ background-color: #aaabb0;
 } 
  .edu {
     width: 100%;
-    background-color: #2b2a2f ;
+    background-color: #2b2a2f09 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,7 +429,8 @@ grid-column-gap: 20px;
 
   .edu-title {
     font-family: helvetica;
-    color: #2743cf;
+color: rgba(250, 129, 204, 0.575);
+
     padding: 0px 0px 20px 30px;
  }
  .col .edu-contents {
@@ -457,14 +458,14 @@ grid-column-gap: 20px;
     border-radius: 50%;
     right: calc(100% + 22px);
     top: 0;
-    background-color: #2743cf;
-    border: 2px solid white;
+    background-color: rgba(250, 129, 204, 0.575);
+    border: 2px solid black;
 
 }
 
  .edu-contents h4 {
     position: relative;
-    color: #2743cf;
+    color: #787cb5;
 } 
 
 .box h3 {
@@ -480,18 +481,20 @@ grid-column-gap: 20px;
 }
 
 .color-item {
-    background: #eeeef0;
+    background:#2B2A2F;
+width: 100%;
+height: 100%;
 }
 .serv-container {
     width: 90%;
-    margin: auto;
+    margin-top: auto;
     
 }
 .section-heading{
     font-size: 40px;
     text-align: center;
-    margin-top: 50px;
-
+    /* margin-top: 20px; */
+   color: rgba(250, 129, 204, 0.575);
 }
 
 .services-cards {
@@ -507,6 +510,7 @@ grid-column-gap: 20px;
     text-align: center;
     cursor: pointer;
      transition: 0.5s ease;
+     color: #787cb5;
 }
 .services-card :hover {
     transform: translateY(-20px);
@@ -533,8 +537,7 @@ grid-column-gap: 20px;
     
 }
 .testimonial-item {
-    padding-top: 20px;
-    /* padding-left: 400px; */
+    padding-top: 20px; 
     text-align: center;
 }
 .testimonial-item p {
@@ -547,12 +550,12 @@ align-items: center;
 .testimonial-item h1 {
 padding-top: 15px;
 font-size: 50px;
-
+color: rgba(250, 129, 204, 0.575);
 }
 .testimonial-group {
-    background-color: #f7f4f3;
+    background-color: #2B2A2F;
     height: 70vh;
-    margin-top: 70px;
+    /* margin-top: 20px; */
 }
 .testimonials1 {
     padding: 20px;
@@ -631,8 +634,8 @@ font-size: 50px;
 
 .contact-form button {
     padding: 20px;
-    background-color: #2B2A2F;
-    color: purple;
+    background-color: #2b2a2f1f;
+    color: rgba(250, 129, 204, 0.575);
     border: none;
     border-radius: 4px;
     cursor: pointer;
