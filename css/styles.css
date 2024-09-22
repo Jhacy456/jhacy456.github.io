@@ -99,7 +99,7 @@ background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: rgba(250, 129, 204, 0.575);
+    color: rgba(231, 13, 147, 0.842);
     width: 200px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -110,7 +110,7 @@ background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: rgba(250, 129, 204, 0.575);
+    color: rgba(240, 22, 156, 0.863);
     width: 200px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -284,13 +284,13 @@ font-size: 29px;
     content: '';
     width: 100%;
     height: 100%;
-    outline: 3px solid rgba(250, 129, 204, 0.575);
+    outline: 3px solid #f70e9dea;
     top: 15px;
     left: 15px;
     z-index: 1;
 }
 .infosection h1 {
-color: rgba(250, 129, 204, 0.575);
+color: rgba(190, 6, 120, 0.877);
 font-size: 30px;
 font-family: helvetica;
 text-transform: uppercase;
@@ -319,7 +319,7 @@ background-color: black;
     font-family: helvetica;
     font-size: 20px;
     font-weight: 600;
-    color: rgba(250, 129, 204, 0.575);
+    color: rgba(228, 7, 143, 0.877);
     padding: 14px 0px 15px;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -337,7 +337,7 @@ background-color: black;
     grid-gap: 10px 20px;
     margin-top: 14px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(250, 129, 204, 0.575);
+    border-bottom: 1px solid rgba(243, 10, 154, 0.952);
 }
 .personalinfo div{
     display: grid;
@@ -352,7 +352,7 @@ background-color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 15px;
-    color: rgba(250, 129, 204, 0.575);
+    color: rgba(241, 14, 154, 0.945);
     width: 250px;
     height: 65px;
     border-radius: 50px 0px 50px 0px;
@@ -429,7 +429,7 @@ grid-column-gap: 20px;
 
   .edu-title {
     font-family: helvetica;
-color: rgba(250, 129, 204, 0.575);
+color: rgba(243, 9, 153, 0.959);
 
     padding: 0px 0px 20px 30px;
  }
@@ -458,14 +458,14 @@ color: rgba(250, 129, 204, 0.575);
     border-radius: 50%;
     right: calc(100% + 22px);
     top: 0;
-    background-color: rgba(250, 129, 204, 0.575);
+    background-color: rgba(228, 16, 146, 0.815);
     border: 2px solid black;
 
 }
 
  .edu-contents h4 {
     position: relative;
-    color: #787cb5;
+    color: rgba(228, 16, 146, 0.815);
 } 
 
 .box h3 {
@@ -481,7 +481,7 @@ color: rgba(250, 129, 204, 0.575);
 }
 
 .color-item {
-    background:#2B2A2F;
+    background: rgb(230, 220, 203);
 width: 100%;
 height: 100%;
 }
@@ -494,7 +494,7 @@ height: 100%;
     font-size: 40px;
     text-align: center;
     /* margin-top: 20px; */
-   color: rgba(250, 129, 204, 0.575);
+   color: rgba(228, 16, 146, 0.815);
 }
 
 .services-cards {
@@ -510,7 +510,7 @@ height: 100%;
     text-align: center;
     cursor: pointer;
      transition: 0.5s ease;
-     color: #787cb5;
+     color: rgba(228, 16, 146, 0.815);
 }
 .services-card :hover {
     transform: translateY(-20px);
@@ -550,10 +550,10 @@ align-items: center;
 .testimonial-item h1 {
 padding-top: 15px;
 font-size: 50px;
-color: rgba(250, 129, 204, 0.575);
+color: rgba(228, 16, 146, 0.815);
 }
 .testimonial-group {
-    background-color: #2B2A2F;
+    background-color: whitesmoke;
     height: 70vh;
     /* margin-top: 20px; */
 }
@@ -590,7 +590,7 @@ color: rgba(250, 129, 204, 0.575);
 }
 .body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #928c8c81;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,8 +600,8 @@ color: rgba(250, 129, 204, 0.575);
 .container {
     width: 100%;
     max-width: 500px;
-    padding: 20px;
-    background-color: #2B2A2F;
+    padding: 30px;
+    background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -614,13 +614,13 @@ color: rgba(250, 129, 204, 0.575);
 .contact-form h2 {
     margin-bottom: 15px;
     text-align: center;
-    color: #787cb5;
+    color: rgba(228, 16, 146, 0.815);
 }
 
 .contact-form label {
     margin-bottom: 5px;
     font-weight: bold;
-    color: #787cb5;
+    color: rgba(228, 16, 146, 0.815);
 }
 
 .contact-form input,
@@ -635,7 +635,7 @@ color: rgba(250, 129, 204, 0.575);
 .contact-form button {
     padding: 20px;
     background-color: #2b2a2f1f;
-    color: rgba(250, 129, 204, 0.575);
+    color: rgba(238, 15, 152, 0.849);
     border: none;
     border-radius: 4px;
     cursor: pointer;
