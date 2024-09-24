@@ -361,6 +361,10 @@ background-color: black;
     margin-top: 20px;
     
 }
+.infosection button a {
+    background: none;
+}
+
 .infosection button :hover{
     background-color: whitesmoke; 
 
@@ -434,9 +438,9 @@ color: rgba(243, 9, 153, 0.959);
     padding: 0px 0px 20px 30px;
  }
  .col .edu-contents {
-    padding: 0px 30px;
     border-left: 2px solid #aaabb0;
  }
+
 .box {
     position: relative;
     padding: 20px;
@@ -450,18 +454,17 @@ color: rgba(243, 9, 153, 0.959);
     box-shadow: 0px 3px 12px opx #ccc;
     border: 1px solid transparent;
 }
-.box ::before {
-    content: '';
+ .bullet  {
     position: absolute;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    right: calc(100% + 22px);
-    top: 0;
+    left: -9px;
+    top: 20px;
     background-color: rgba(228, 16, 146, 0.815);
     border: 2px solid black;
 
-}
+} 
 
  .edu-contents h4 {
     position: relative;
@@ -698,6 +701,11 @@ footer {
 
 .footer-bottom p {
     margin-top: 15px;
+}
+
+.content-container {
+    padding: 0px 20px;
+    position: relative;
 }
 
 /* Responsive Design */
