@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>My Portfolio</title>
 </head>
 
@@ -23,7 +24,7 @@
         <li><a href="#about">About Me</a></li>
         <li><a href="#eduexp">Education & Experience</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger">
@@ -33,22 +34,52 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <p class="subtitle">Hi there!</p>
-        <div class="typewriter">
-          <h1 class="title">I'm Jacinta, a Front-End Developer</h1>
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="grid-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Frontend Developer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I craft responsive websites where technology meets creativity. Junior developer with a passion for
+                    creating engaging user experiences.
+                </p>
+                <div class="cta-button-container">
+                    <a href="#contact" class="cta-button">
+                        Let's talk 
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path d="M12.854 7.146a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L11.293 6H4.5a.5.5 0 0 0 0 1h6.793l-3.146 3.146a.5.5 0 1 0 .708.708l4-4z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-container">
+                <div class="image-wrapper">
+                    
+                    <img src="./css/assets/images/portfolio.jpg" alt="Your Profile" class="profile-image" />
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="cv-button-container">
+                    <a
+                        href="https://docs.google.com/document/d/1XKQXbetkQhpukVR8ywvkpmmbGNqiQZGa/edit?usp=sharing&ouid=101415918471510944666&rtpof=true&sd=true"
+                        target="_blank"  class="cta-button"
+                    >
+                        Download CV 
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path d="M12.854 7.146a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L11.293 6H4.5a.5.5 0 0 0 0 1h6.793l-3.146 3.146a.5.5 0 1 0 .708.708l4-4z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="decorative-background"></div>
+            </div>
         </div>
-        <p class="description">Building fast, responsive, and visually appealing websites. Let's create something
-          amazing together!</p>
-        <div class="hero-buttons">
-          <a href="#about" class="btn about-me"><i class="fas fa-user"></i> More About Me</a>
-          <a href="#portfolio" class="btn portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
-        </div>
-      </div>
+
     </div>
-  </section>
+</section>
+
+
 
   <!-- About Me Section -->
   <section id="about" class="about-section">
@@ -72,8 +103,7 @@
             <div><strong>Email:</strong> <a href="mailto:jakpesad20@gmail.com">jakpesad20@gmail.com</a></div>
             <div><strong>Address:</strong> Hohoe HR Street</div>
           </div>
-          <a href="https://docs.google.com/document/d/1XKQXbetkQhpukVR8ywvkpmmbGNqiQZGa/edit?usp=sharing&ouid=101415918471510944666&rtpof=true&sd=true"
-            target="_blank" class="btn download-cv">Download CV</a>
+        
         </div>
       </div>
     </div>
@@ -167,21 +197,121 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio-section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="portfolio-gallery">
-        <!-- Example Project -->
-        <div class="portfolio-item">
-          <img src="css/assets/images/pixx5.png" alt="Project 1">
-          <div class="portfolio-overlay">
-            <h3>My first project</h3>
-            <p>This is the landing page of my very first project</p>
-            <a href="#" class="btn">View Project</a>
+  <!-- Project Section -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in-up">
+        <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Here are some of my recent works that showcase my skills and experience.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+        <div class="project bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="relative group">
+            <img
+              src="./css/assets/images/project1.png"
+              alt="Project Title"
+              class="w-full h-48 object-cover transition-transform group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-4">
+              <a href="https://github.com/Jhacy456/mobile-wallet-fraud-database" target="_blank" class="text-white hover:text-purple-400">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://admin-mobile-wallet-fraud-database.vercel.app/" target="_blank"  class="text-white hover:text-purple-400">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://mobile-wallet-fraud-database.vercel.app/" target="_blank" class="text-white hover:text-purple-400">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Mobile Wallet Fraud Database</h3>
+            <p class="text-gray-600 mb-4">I contributed to this Open Source project by MEST Africa as a frontend developer to create this app to help curb mobile money Fraud in our country. The project has both the Admin and user section</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                React
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                Tailwind Css
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                Charts.js
+              </span>
+            </div>
           </div>
         </div>
 
+        <div class="project bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="relative group">
+            <img
+              src="./css/assets/images/project2.png"
+              alt="Project Title"
+              class="w-full h-48 object-cover transition-transform group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-4">
+              <a href="https://github.com/Brezzy-org/breeze-app" class="text-white hover:text-purple-400">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://breezeapp1.netlify.app/" class="text-white hover:text-purple-400">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Breeze</h3>
+            <p class="text-gray-600 mb-4">Breeze is a mental wellness app designed to promote emotional well-being, address mental health stigma, and make therapy convenient, available, and accessible to anyone worldwide.</p>
+            <div class="flex flex-wrap gap-2">
+             
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                React
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                Tailwind  Css
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                Lucid React
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                React Calender
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="project bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="relative group">
+            <img
+              src="./css/assets/images/project3.png"
+              alt="Project Title"
+              class="w-full h-48 object-cover transition-transform group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-4">
+              <a href="https://github.com/Jhacy456/Freshpick" target="_blank" class="text-white hover:text-purple-400">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://freshpickapp.netlify.app/" target="_blank" class="text-white hover:text-purple-400">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Fresh Pick</h3>
+            <p class="text-gray-600 mb-4">Grocery Delivery App that conects Farmers to consumers easily. it advertises products ranging from farm produce, animal products such milk and egg.</p>
+            <div class="flex flex-wrap gap-2">
+             
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                React
+              </span>
+              <span class="tech px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm">
+                Tailwind Css
+              </span>
+             
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -207,7 +337,7 @@
               <input type="email" name="email" placeholder="Email" required>
             </div>
             <div class="form-group">
-              <textarea placeholder="Please enter the details of your request" required></textarea>
+              <textarea placeholder="Please enter the details of your request" name="message" required></textarea>
             </div>
             <button type="submit" class="submit-btn">Submit</button>
           </form>

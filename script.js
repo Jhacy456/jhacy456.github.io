@@ -5,7 +5,10 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
 hamburger.addEventListener('click', () => {
+    // Toggle the 'active' class on the nav-links
     navLinks.classList.toggle('active');
+    
+    // Toggle the 'toggle' class on the hamburger to trigger animation (like rotating)
     hamburger.classList.toggle('toggle');
 });
 
@@ -14,10 +17,14 @@ const navItems = document.querySelectorAll('.nav-links a');
 
 navItems.forEach(item => {
     item.addEventListener('click', () => {
+        // Close the menu by removing the 'active' class
         navLinks.classList.remove('active');
+        
+        // Optionally, remove the 'toggle' class to reset the hamburger icon
         hamburger.classList.remove('toggle');
     });
 });
+
 
 // Form Validation (Optional)
 const contactForm = document.getElementById('contact-form');
