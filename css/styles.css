@@ -876,30 +876,48 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar .nav-links {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100% - 70px);
-        background-color: #2B2A2F;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: left 0.3s ease;
-    }
+  .hamburger {
+    display: block;
+  }
 
-    .navbar .nav-links.active {
-        left: 0;
-    }
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: -100%; /* Initially hidden */
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 60px); /* Take full screen height minus navbar height */
+    background-color: white;
+    justify-content: center; /* Center links vertically */
+    align-items: center; /* Center links horizontally */
+    transition: left 0.3s ease-in-out;
+    padding: 20px 0; /* Add padding for breathing space */
+    gap: 20px; /* Add spacing between menu items */
+  }
 
-    .navbar .nav-links li {
-        margin: 20px 0;
-    }
+  .nav-links.active {
+    left: 0; /* Slide into view */
+  }
 
-    .hamburger {
-        display: block;
-    }
+  .nav-links li {
+    margin: 0; /* Reset margin for consistency */
+    text-align: center;
+    width: 100%; /* Ensure full-width clickable area */
+  }
+
+  .nav-links a {
+    font-size: 18px; /* Increase font size for readability */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding to make links easier to tap */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: block; /* Ensure full clickable area */
+  }
+
+  .nav-links a:hover {
+    background: linear-gradient(to right, #7c3aed, #3b82f6); /* Add hover effect for better UX */
+    border-radius: 5px;
+  }
 
     .about-content {
         grid-template-columns: 1fr;
@@ -922,55 +940,5 @@ footer {
 
 
 
-/* Responsiveness */
-@media (max-width: 767px) {
-    .navbar .nav-links {
-        display: none; /* Hide nav items on mobile */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #2B2A2F;
-        padding: 1rem;
-    }
 
-    .navbar .nav-links.active {
-        display: flex; /* Show nav items when the menu is active */
-    }
-
-    .navbar .nav-links li {
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger icon on small screens */
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-
-    .statistics {
-        grid-template-columns: 1fr;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .image-wrapper {
-        width: 16rem;
-        height: 16rem;
-    }
-}
+   
